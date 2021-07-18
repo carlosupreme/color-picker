@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color picker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">Color Picker</a>
+            <button id="nav-btn" class="nav-btn"><i class="fas fa-bars"></i></button>
+            <ul id="nav-menu"class="nav-menu">
+               <li class="nav-item"><a href="#" class="nav-link" id="actualizarPagina">Inicio</a></li>
+               <li class="nav-item"><a href="#" class="nav-link" id="btn-remove-h">Borrar</a></li>
+               <li class="nav-item"><a href="#" class="nav-link" id="aleatorio-btn">Aleatorio</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main class="primary-container">
+        <div class="color-picker-container">
+            <div class="txt">
+                <h2 id="texto">#FFFFFF</h2>
+                <input value="#ffffff" type="color" id="input">
+                <button id="btn" class="btn-historial">Añadir</button>
+            </div>
+            <div class="color" id="color"></div>
+        </div>
+        <div class="historial-container">
+            <div class="h1"> Historial </div>
+            <ul id="caja" class="caja-historial">
+            </ul>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
