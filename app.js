@@ -9,7 +9,11 @@ const aleatorioBtn = document.getElementById("aleatorio-btn");
 const removeHistorialBtn = document.getElementById("btn-remove-h");
 const actualizarTodo = document.getElementById("actualizarPagina")
 
-alert("Bienvenido");
+Swal.fire(
+            'Enviado!',
+            'Tu solicitud se ha enviado a mantenimiento.',
+            'success'
+          )
 
 actualizarTodo.addEventListener("click", function(){
     location.reload(300)
