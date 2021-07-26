@@ -9,12 +9,14 @@ const aleatorioBtn = document.getElementById("aleatorio-btn");
 const removeHistorialBtn = document.getElementById("btn-remove-h");
 const actualizarTodo = document.getElementById("actualizarPagina")
 
+function alertachida(){
 Swal.fire(
-            'Enviado!',
-            'Tu solicitud se ha enviado a mantenimiento.',
-            'success'
-          )
-
+    'Enviado!',
+     'Tu solicitud se ha enviado a mantenimiento.',
+     'success'
+     )
+}
+alertachida();
 actualizarTodo.addEventListener("click", function(){
     location.reload(300)
 });
